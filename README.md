@@ -17,8 +17,11 @@ Les téléporteurs permettent de voyager instantanément d'un point à un autre 
 ### Commandes
 
 Flèche gauche ⬅️ : déplace le Pac-Man vers la gauche
+
 Flèche droite ➡️ : déplace le Pac-Man vers la droite
+
 Flèche haut ⬆️ : déplace le Pac-Man vers le haut
+
 Flèche bas ⬇️: déplace le Pac-Man vers le bas 
 
 ## Instructions pour jouer
