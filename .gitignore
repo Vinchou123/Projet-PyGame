@@ -15,7 +15,7 @@ env/
 *.log
 
 # Ignorer les fichiers de cache générés par Pygame et Tiled
-*.png
+#*.png
 *.jpg
 *.jpeg
 *.gif
