@@ -4,7 +4,7 @@
 
 ### Description
 
-Ce projet est une adaptation simplifiée de Pac-Man, développée en Python avec la bibliothèque Pygame. Le jeu utilise une carte créée avec Tiled, permettant à Pac-Man de se déplacer dans un labyrinthe, d'interagir avec des fantômes et d'utiliser des téléporteurs pour naviguer d'un endroit à un autre.
+Ce projet est une adaptation simplifiée du jeu Pac-Man, développée en Python avec la bibliothèque Pygame. Le jeu utilise une carte créée avec Tiled, permettant à Pac-Man de se déplacer dans un labyrinthe, d'interagir avec des fantômes et d'utiliser des téléporteurs pour naviguer d'un endroit à un autre.
 
 ### Règles du jeu
 
