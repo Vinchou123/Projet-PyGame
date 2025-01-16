@@ -52,6 +52,30 @@ def find_ghost_positions():
 ghost_positions = find_ghost_positions()
 ghosts = [{"rect": pygame.Rect(pos[0], pos[1], 32, 32), "direction": random.choice(list(DIRECTIONS.keys()))} for pos in ghost_positions]
 
+ghost_images = {
+    "blue": pygame.image.load("assets/ghost_blue.png"),
+    "orange": pygame.image.load("assets/ghost_orange.png"),
+    "pink": pygame.image.load("assets/ghost_pink.png"),
+    "red": pygame.image.load("assets/ghost_red.png"),
+}
+
+def find_new_ghost_positions():
+    positions = []
+    for obj in tmx_data.objects:
+        if obj.name == 'ghostprison':
+            positions.append((obj.x, obj.y))
+    return positions
+
+ghost_images_list = [ghost_images["blue"], ghost_images["orange"], ghost_images["pink"], ghost_images["red"]]
+
+new_ghost_positions = find_new_ghost_positions()
+new_ghosts = [
+    {"rect": pygame.Rect(pos[0], pos[1], 32, 32), "direction": random.choice(list(DIRECTIONS.keys())), "image": ghost_images_list[i]}
+    for i, pos in enumerate(new_ghost_positions)
+]
+
+ghosts.extend(new_ghosts)
+
 def check_collision(rect):
     for obj in tmx_data.objects:
         if obj.name == 'murs' and hasattr(obj, 'x') and hasattr(obj, 'y') and hasattr(obj, 'width') and hasattr(obj, 'height'):
@@ -127,12 +151,19 @@ def find_teleport_positions():
     return teleport_positions
 
 ghost_speed = 0.8
+prison_ghost_speed = 0.001 
 
 def move_ghost(ghost, speed=ghost_speed):
-    direction = ghost["direction"]  
+    direction = ghost["direction"]
     dx, dy = DIRECTIONS[direction]
     new_x = ghost["rect"].x + dx * speed
     new_y = ghost["rect"].y + dy * speed
+
+    for prison in new_ghost_positions:
+        prison_rect = pygame.Rect(prison[0], prison[1], tile_size, tile_size)
+        if prison_rect.colliderect(ghost["rect"]):
+            speed = prison_ghost_speed
+            break
 
     if not check_collision(pygame.Rect(new_x, new_y, ghost["rect"].width, ghost["rect"].height)):
         ghost["rect"].x = new_x
@@ -141,6 +172,11 @@ def move_ghost(ghost, speed=ghost_speed):
         opposite = {"up": "down", "down": "up", "left": "right", "right": "left"}
         valid_directions = [d for d in DIRECTIONS.keys() if d != opposite[direction]]
         ghost["direction"] = random.choice(valid_directions)
+
+
+def move_all_ghosts():
+    for ghost in ghosts:
+        move_ghost(ghost)
 
 def draw_map():
     for layer in tmx_data.layers:
@@ -165,8 +201,7 @@ while running:
     move_pacman(keys)
     check_pacman_ghost_collision()
 
-    for ghost in ghosts:
-        move_ghost(ghost)
+    move_all_ghosts()
 
     screen.fill((0, 0, 0))
 
@@ -175,7 +210,11 @@ while running:
     screen.blit(pacman_image, pacman_rect)
 
     for ghost in ghosts:
-        screen.blit(ghost_image, ghost["rect"])
+        if "image" not in ghost:
+            ghost["image"] = ghost_image
+        
+    for ghost in ghosts:
+        screen.blit(ghost["image"], ghost["rect"])
 
     draw_lives()
 
