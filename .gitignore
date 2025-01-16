@@ -36,8 +36,8 @@ env/
 Thumbs.db
 
 # Ignorer les fichiers Tiled (carte de jeu)
-*.tmx
-*.tsx
+#*.tmx
+#*.tsx
 
 # Ignorer les fichiers de sortie de compilation ou de distribution
 /build/
