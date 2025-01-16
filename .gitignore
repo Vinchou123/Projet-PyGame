@@ -1,0 +1,50 @@
+# Ignorer les fichiers Python compilés
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignorer les dossiers d'environnement virtuel Python
+venv/
+env/
+
+# Ignorer les fichiers de configuration de l'IDE (Visual Studio Code)
+.vscode/
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers de cache générés par Pygame et Tiled
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.psd
+*.ico
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# Ignorer les fichiers temporaires ou générés
+*.bak
+*.swp
+*.tmp
+*.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers Tiled (carte de jeu)
+*.tmx
+*.tsx
+
+# Ignorer les fichiers de sortie de compilation ou de distribution
+/build/
+/dist/
+
+# Ignorer les fichiers générés par d'autres outils ou par la configuration du projet
+.idea/
+
+# Ignorer les fichiers .ini
+*.ini
