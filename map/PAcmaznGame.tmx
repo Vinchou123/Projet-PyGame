@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="25" height="26" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="98">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="25" height="26" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="349">
  <tileset firstgid="1" source="Murs.tsx"/>
  <layer id="1" name="Fond bleu" width="25" height="26">
   <data encoding="csv">
@@ -31,90 +31,836 @@
 33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33,33
 </data>
  </layer>
+ <objectgroup id="14" name="piece">
+  <object id="98" name="piece" type="piece" x="742.667" y="101">
+   <point/>
+  </object>
+  <object id="99" name="piece" type="piece" x="712.667" y="100.667">
+   <point/>
+  </object>
+  <object id="100" name="piece" type="piece" x="679.333" y="100.333">
+   <point/>
+  </object>
+  <object id="101" name="piece" type="piece" x="612.886" y="99.1136">
+   <point/>
+  </object>
+  <object id="102" name="piece" type="piece" x="582.788" y="99.1591">
+   <point/>
+  </object>
+  <object id="103" name="piece" type="piece" x="550.038" y="99.3106">
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="4" name="murs" class="murs" offsetx="-4" offsety="-2">
-  <object id="1" name="murs" type="murs" x="4" y="68" width="794" height="30.6667"/>
+  <object id="1" name="murs" type="murs" x="4.66667" y="65" width="794" height="30.6667"/>
  </objectgroup>
  <objectgroup id="10" name="startghost">
-  <object id="68" name="startghost" type="startghost" x="36" y="104">
+  <object id="68" name="startghost" type="startghost" x="32" y="128">
    <point/>
   </object>
-  <object id="69" name="startghost" type="startghost" x="731.667" y="110.667">
+  <object id="69" name="startghost" type="startghost" x="467.167" y="354.417">
    <point/>
   </object>
-  <object id="70" name="startghost" type="startghost" x="233.333" y="700">
+  <object id="70" name="startghost" type="startghost" x="230.333" y="699.333">
    <point/>
   </object>
-  <object id="71" name="startghost" type="startghost" x="36" y="682.667">
+  <object id="71" name="startghost" type="startghost" x="152.182" y="708.849">
    <point/>
   </object>
-  <object id="72" name="startghost" type="startghost" x="681.333" y="685.333">
+  <object id="72" name="startghost" type="startghost" x="674.242" y="682.788">
    <point/>
   </object>
   <object id="87" name="startghost" type="startghost" x="616" y="288">
    <point/>
   </object>
-  <object id="88" name="startghost" type="startghost" x="416.667" y="208">
+  <object id="88" name="startghost" type="startghost" x="661.667" y="291.667">
+   <point/>
+  </object>
+  <object id="104" name="piece" type="piece" x="518.818" y="99.9091">
+   <point/>
+  </object>
+  <object id="105" name="piece" type="piece" x="486.5" y="100">
+   <point/>
+  </object>
+  <object id="106" name="piece" type="piece" x="454" y="100">
+   <point/>
+  </object>
+  <object id="107" name="piece" type="piece" x="420" y="100.5">
+   <point/>
+  </object>
+  <object id="108" name="piece" type="piece" x="419.5" y="132">
+   <point/>
+  </object>
+  <object id="109" name="piece" type="piece" x="417.5" y="164">
+   <point/>
+  </object>
+  <object id="110" name="piece" type="piece" x="420" y="228.5">
+   <point/>
+  </object>
+  <object id="111" name="piece" type="piece" x="452" y="227">
+   <point/>
+  </object>
+  <object id="112" name="piece" type="piece" x="483.5" y="226">
+   <point/>
+  </object>
+  <object id="113" name="piece" type="piece" x="515.5" y="227">
+   <point/>
+  </object>
+  <object id="114" name="piece" type="piece" x="548.5" y="226.5">
+   <point/>
+  </object>
+  <object id="115" name="piece" type="piece" x="579" y="227.5">
+   <point/>
+  </object>
+  <object id="116" name="piece" type="piece" x="610.5" y="228">
+   <point/>
+  </object>
+  <object id="117" name="piece" type="piece" x="611" y="195">
+   <point/>
+  </object>
+  <object id="118" name="piece" type="piece" x="610.5" y="163">
+   <point/>
+  </object>
+  <object id="119" name="piece" type="piece" x="611.5" y="132">
+   <point/>
+  </object>
+  <object id="120" name="piece" type="piece" x="644" y="227.5">
+   <point/>
+  </object>
+  <object id="121" name="piece" type="piece" x="675.5" y="227.5">
+   <point/>
+  </object>
+  <object id="122" name="piece" type="piece" x="707.5" y="227.5">
+   <point/>
+  </object>
+  <object id="123" name="piece" type="piece" x="740" y="228.5">
+   <point/>
+  </object>
+  <object id="124" name="piece" type="piece" x="740" y="196.5">
+   <point/>
+  </object>
+  <object id="125" name="piece" type="piece" x="739.5" y="164">
+   <point/>
+  </object>
+  <object id="126" name="piece" type="piece" x="740" y="131.5">
+   <point/>
+  </object>
+  <object id="127" name="piece" type="piece" x="740.5" y="260.5">
+   <point/>
+  </object>
+  <object id="128" name="piece" type="piece" x="740" y="292">
+   <point/>
+  </object>
+  <object id="129" name="piece" type="piece" x="708.5" y="291.5">
+   <point/>
+  </object>
+  <object id="130" name="piece" type="piece" x="676.25" y="291.5">
+   <point/>
+  </object>
+  <object id="131" name="piece" type="piece" x="644.5" y="291.5">
+   <point/>
+  </object>
+  <object id="132" name="piece" type="piece" x="610.667" y="258.333">
+   <point/>
+  </object>
+  <object id="133" name="piece" type="piece" x="611" y="290">
+   <point/>
+  </object>
+  <object id="134" name="piece" type="piece" x="611" y="322.333">
+   <point/>
+  </object>
+  <object id="135" name="piece" type="piece" x="611.333" y="354.667">
+   <point/>
+  </object>
+  <object id="136" name="piece" type="piece" x="610.667" y="386.667">
+   <point/>
+  </object>
+  <object id="137" name="piece" type="piece" x="644" y="99">
+   <point/>
+  </object>
+  <object id="138" name="piece" type="piece" x="388" y="227">
+   <point/>
+  </object>
+  <object id="139" name="piece" type="piece" x="355.625" y="226.25">
+   <point/>
+  </object>
+  <object id="140" name="piece" type="piece" x="356.5" y="196.5">
+   <point/>
+  </object>
+  <object id="141" name="piece" type="piece" x="355" y="163">
+   <point/>
+  </object>
+  <object id="142" name="piece" type="piece" x="354.364" y="131.273">
+   <point/>
+  </object>
+  <object id="143" name="piece" type="piece" x="355" y="99.375">
+   <point/>
+  </object>
+  <object id="144" name="piece" type="piece" x="323.636" y="98.7273">
+   <point/>
+  </object>
+  <object id="145" name="piece" type="piece" x="290.909" y="98.7273">
+   <point/>
+  </object>
+  <object id="146" name="piece" type="piece" x="258.909" y="98.3636">
+   <point/>
+  </object>
+  <object id="147" name="piece" type="piece" x="226.364" y="98.3636">
+   <point/>
+  </object>
+  <object id="148" name="piece" type="piece" x="194.909" y="98.3636">
+   <point/>
+  </object>
+  <object id="149" name="piece" type="piece" x="162.182" y="98.3636">
+   <point/>
+  </object>
+  <object id="150" name="piece" type="piece" x="130.727" y="98.7273">
+   <point/>
+  </object>
+  <object id="151" name="piece" type="piece" x="163.091" y="130.364">
+   <point/>
+  </object>
+  <object id="152" name="piece" type="piece" x="98.1818" y="98.3636">
+   <point/>
+  </object>
+  <object id="153" name="piece" type="piece" x="66.3636" y="98.5455">
+   <point/>
+  </object>
+  <object id="154" name="piece" type="piece" x="34.3636" y="98.5455">
+   <point/>
+  </object>
+  <object id="155" name="piece" type="piece" x="34.1818" y="130.182">
+   <point/>
+  </object>
+  <object id="156" name="piece" type="piece" x="34.5455" y="162.727">
+   <point/>
+  </object>
+  <object id="157" name="piece" type="piece" x="34.5455" y="194.364">
+   <point/>
+  </object>
+  <object id="158" name="piece" type="piece" x="34.3636" y="226.364">
+   <point/>
+  </object>
+  <object id="159" name="piece" type="piece" x="34.3636" y="258.727">
+   <point/>
+  </object>
+  <object id="160" name="piece" type="piece" x="66.5455" y="226">
+   <point/>
+  </object>
+  <object id="161" name="piece" type="piece" x="99.0909" y="226.182">
+   <point/>
+  </object>
+  <object id="162" name="piece" type="piece" x="131.273" y="226.545">
+   <point/>
+  </object>
+  <object id="163" name="piece" type="piece" x="162.909" y="226.182">
+   <point/>
+  </object>
+  <object id="164" name="piece" type="piece" x="162.727" y="194.727">
+   <point/>
+  </object>
+  <object id="165" name="piece" type="piece" x="162.364" y="162.545">
+   <point/>
+  </object>
+  <object id="166" name="piece" type="piece" x="162.727" y="259.091">
+   <point/>
+  </object>
+  <object id="167" name="piece" type="piece" x="163.273" y="290.727">
+   <point/>
+  </object>
+  <object id="168" name="piece" type="piece" x="195.455" y="226.364">
+   <point/>
+  </object>
+  <object id="169" name="piece" type="piece" x="227.091" y="226.182">
+   <point/>
+  </object>
+  <object id="170" name="piece" type="piece" x="259.273" y="226.364">
+   <point/>
+  </object>
+  <object id="171" name="piece" type="piece" x="259.273" y="226.364">
+   <point/>
+  </object>
+  <object id="172" name="piece" type="piece" x="226.364" y="258.545">
+   <point/>
+  </object>
+  <object id="173" name="piece" type="piece" x="226.545" y="290.364">
+   <point/>
+  </object>
+  <object id="174" name="piece" type="piece" x="291.625" y="225.75">
+   <point/>
+  </object>
+  <object id="175" name="piece" type="piece" x="322.5" y="225.625">
+   <point/>
+  </object>
+  <object id="176" name="piece" type="piece" x="259.455" y="290.727">
+   <point/>
+  </object>
+  <object id="177" name="piece" type="piece" x="291.273" y="290.182">
+   <point/>
+  </object>
+  <object id="178" name="piece" type="piece" x="322.909" y="290">
+   <point/>
+  </object>
+  <object id="179" name="piece" type="piece" x="355.091" y="290">
+   <point/>
+  </object>
+  <object id="180" name="piece" type="piece" x="354.364" y="322.364">
+   <point/>
+  </object>
+  <object id="181" name="piece" type="piece" x="354.727" y="354.545">
+   <point/>
+  </object>
+  <object id="182" name="piece" type="piece" x="322.909" y="354.364">
+   <point/>
+  </object>
+  <object id="184" name="piece" type="piece" x="418.909" y="354.364">
+   <point/>
+  </object>
+  <object id="203" name="piece" type="piece" x="34" y="289.625">
+   <point/>
+  </object>
+  <object id="204" name="piece" type="piece" x="66.75" y="290">
+   <point/>
+  </object>
+  <object id="205" name="piece" type="piece" x="98.5" y="290.25">
+   <point/>
+  </object>
+  <object id="206" name="piece" type="piece" x="130.75" y="290.25">
+   <point/>
+  </object>
+  <object id="207" name="piece" type="piece" x="162.5" y="322.5">
+   <point/>
+  </object>
+  <object id="208" name="piece" type="piece" x="162.5" y="354.25">
+   <point/>
+  </object>
+  <object id="209" name="piece" type="piece" x="162.75" y="386.5">
+   <point/>
+  </object>
+  <object id="210" name="piece" type="piece" x="163" y="418.5">
+   <point/>
+  </object>
+  <object id="211" name="piece" type="piece" x="194.5" y="418.25">
+   <point/>
+  </object>
+  <object id="212" name="piece" type="piece" x="226.5" y="418">
+   <point/>
+  </object>
+  <object id="213" name="piece" type="piece" x="226.75" y="386">
+   <point/>
+  </object>
+  <object id="214" name="piece" type="piece" x="226" y="354.5">
+   <point/>
+  </object>
+  <object id="215" name="piece" type="piece" x="258.75" y="354">
+   <point/>
+  </object>
+  <object id="216" name="piece" type="piece" x="290.5" y="353.75">
+   <point/>
+  </object>
+  <object id="217" name="piece" type="piece" x="385.364" y="352.909">
+   <point/>
+  </object>
+  <object id="218" name="piece" type="piece" x="131" y="418">
+   <point/>
+  </object>
+  <object id="219" name="piece" type="piece" x="99" y="418">
+   <point/>
+  </object>
+  <object id="220" name="piece" type="piece" x="67" y="418">
+   <point/>
+  </object>
+  <object id="221" name="piece" type="piece" x="35.3333" y="418.333">
+   <point/>
+  </object>
+  <object id="222" name="piece" type="piece" x="2" y="418.333">
+   <point/>
+  </object>
+  <object id="223" name="piece" type="piece" x="163.333" y="450.667">
+   <point/>
+  </object>
+  <object id="224" name="piece" type="piece" x="162.667" y="483">
+   <point/>
+  </object>
+  <object id="225" name="piece" type="piece" x="162.667" y="515">
+   <point/>
+  </object>
+  <object id="226" name="piece" type="piece" x="163.333" y="547.333">
+   <point/>
+  </object>
+  <object id="227" name="piece" type="piece" x="131.667" y="547">
+   <point/>
+  </object>
+  <object id="228" name="piece" type="piece" x="194.545" y="546.364">
+   <point/>
+  </object>
+  <object id="229" name="piece" type="piece" x="226.727" y="545.455">
+   <point/>
+  </object>
+  <object id="230" name="piece" type="piece" x="226.545" y="514.545">
+   <point/>
+  </object>
+  <object id="231" name="piece" type="piece" x="226" y="482.364">
+   <point/>
+  </object>
+  <object id="232" name="piece" type="piece" x="226" y="449.818">
+   <point/>
+  </object>
+  <object id="233" name="piece" type="piece" x="258.182" y="481.818">
+   <point/>
+  </object>
+  <object id="234" name="piece" type="piece" x="290.545" y="482.364">
+   <point/>
+  </object>
+  <object id="235" name="piece" type="piece" x="322.727" y="481.636">
+   <point/>
+  </object>
+  <object id="236" name="piece" type="piece" x="386.545" y="481.818">
+   <point/>
+  </object>
+  <object id="237" name="piece" type="piece" x="418.545" y="481.273">
+   <point/>
+  </object>
+  <object id="238" name="piece" type="piece" x="450.182" y="481.455">
+   <point/>
+  </object>
+  <object id="239" name="piece" type="piece" x="482.182" y="482.182">
+   <point/>
+  </object>
+  <object id="240" name="piece" type="piece" x="514.364" y="482">
+   <point/>
+  </object>
+  <object id="241" name="piece" type="piece" x="546.182" y="481.818">
+   <point/>
+  </object>
+  <object id="242" name="piece" type="piece" x="546.727" y="515.091">
+   <point/>
+  </object>
+  <object id="243" name="piece" type="piece" x="546.727" y="546.545">
+   <point/>
+  </object>
+  <object id="244" name="piece" type="piece" x="579.273" y="546.545">
+   <point/>
+  </object>
+  <object id="245" name="piece" type="piece" x="610.364" y="546.364">
+   <point/>
+  </object>
+  <object id="246" name="piece" type="piece" x="610" y="514.182">
+   <point/>
+  </object>
+  <object id="247" name="piece" type="piece" x="610" y="482.182">
+   <point/>
+  </object>
+  <object id="248" name="piece" type="piece" x="610.364" y="450.182">
+   <point/>
+  </object>
+  <object id="249" name="piece" type="piece" x="642.545" y="546.364">
+   <point/>
+  </object>
+  <object id="250" name="piece" type="piece" x="674.727" y="546.545">
+   <point/>
+  </object>
+  <object id="251" name="piece" type="piece" x="706.545" y="546">
+   <point/>
+  </object>
+  <object id="252" name="piece" type="piece" x="738.909" y="546">
+   <point/>
+  </object>
+  <object id="253" name="piece" type="piece" x="738" y="578.182">
+   <point/>
+  </object>
+  <object id="254" name="piece" type="piece" x="738.727" y="610.727">
+   <point/>
+  </object>
+  <object id="255" name="piece" type="piece" x="706.364" y="610.364">
+   <point/>
+  </object>
+  <object id="256" name="piece" type="piece" x="674.182" y="610">
+   <point/>
+  </object>
+  <object id="257" name="piece" type="piece" x="674.545" y="642.364">
+   <point/>
+  </object>
+  <object id="258" name="piece" type="piece" x="674.364" y="674.182">
+   <point/>
+  </object>
+  <object id="259" name="piece" type="piece" x="674.727" y="706.364">
+   <point/>
+  </object>
+  <object id="260" name="piece" type="piece" x="643.636" y="706.545">
+   <point/>
+  </object>
+  <object id="261" name="piece" type="piece" x="706.727" y="706.364">
+   <point/>
+  </object>
+  <object id="262" name="piece" type="piece" x="738.545" y="706.182">
+   <point/>
+  </object>
+  <object id="263" name="piece" type="piece" x="738.364" y="738.364">
+   <point/>
+  </object>
+  <object id="264" name="piece" type="piece" x="739.273" y="770.182">
+   <point/>
+  </object>
+  <object id="265" name="piece" type="piece" x="707.636" y="770.545">
+   <point/>
+  </object>
+  <object id="266" name="piece" type="piece" x="674.727" y="770.364">
+   <point/>
+  </object>
+  <object id="267" name="piece" type="piece" x="643.091" y="770.364">
+   <point/>
+  </object>
+  <object id="268" name="piece" type="piece" x="610.364" y="770">
+   <point/>
+  </object>
+  <object id="269" name="piece" type="piece" x="578.909" y="769.818">
+   <point/>
+  </object>
+  <object id="270" name="piece" type="piece" x="546.909" y="770.364">
+   <point/>
+  </object>
+  <object id="271" name="piece" type="piece" x="515.091" y="770.727">
+   <point/>
+  </object>
+  <object id="272" name="piece" type="piece" x="482.909" y="770.364">
+   <point/>
+  </object>
+  <object id="273" name="piece" type="piece" x="451.455" y="770.364">
+   <point/>
+  </object>
+  <object id="274" name="piece" type="piece" x="418.727" y="770.364">
+   <point/>
+  </object>
+  <object id="275" name="piece" type="piece" x="418.545" y="738.364">
+   <point/>
+  </object>
+  <object id="276" name="piece" type="piece" x="418.182" y="706.727">
+   <point/>
+  </object>
+  <object id="277" name="piece" type="piece" x="418.909" y="675.273">
+   <point/>
+  </object>
+  <object id="278" name="piece" type="piece" x="418.545" y="642.182">
+   <point/>
+  </object>
+  <object id="279" name="piece" type="piece" x="418.182" y="610">
+   <point/>
+  </object>
+  <object id="280" name="piece" type="piece" x="417.818" y="578">
+   <point/>
+  </object>
+  <object id="281" name="piece" type="piece" x="418.182" y="547.091">
+   <point/>
+  </object>
+  <object id="282" name="piece" type="piece" x="450.909" y="547.455">
+   <point/>
+  </object>
+  <object id="283" name="piece" type="piece" x="483.091" y="546.909">
+   <point/>
+  </object>
+  <object id="284" name="piece" type="piece" x="515.455" y="546.182">
+   <point/>
+  </object>
+  <object id="285" name="piece" type="piece" x="546.75" y="579.25">
+   <point/>
+  </object>
+  <object id="286" name="piece" type="piece" x="547.25" y="610.75">
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="11" name="road"/>
  <objectgroup id="5" name="murs">
-  <object id="4" name="murs" type="murs" x="68.6667" y="132.667" width="87.3333" height="89.3333"/>
-  <object id="5" name="murs" type="murs" x="196" y="132" width="152" height="89.3333"/>
+  <object id="4" name="murs" type="murs" x="68.6667" y="132.667" width="87.3333" height="87.3333"/>
+  <object id="5" name="murs" type="murs" x="196" y="132" width="152" height="88.3333"/>
  </objectgroup>
  <objectgroup id="6" name="murs">
-  <object id="8" name="murs" type="murs" x="452.5" y="131" width="152" height="90"/>
+  <object id="8" name="murs" type="murs" x="452.5" y="132.667" width="151.273" height="88.3333"/>
  </objectgroup>
  <objectgroup id="7" name="murs">
-  <object id="9" name="murs" type="murs" x="643.5" y="132" width="88.5" height="89"/>
-  <object id="10" name="murs" type="murs" x="642.667" y="260.167" width="91.3333" height="24.8333"/>
-  <object id="11" name="murs" type="murs" x="259.333" y="258.5" width="283.667" height="27.5"/>
-  <object id="12" name="murs" type="murs" x="387" y="287" width="28" height="61"/>
-  <object id="13" name="murs" type="murs" x="195.167" y="260.667" width="24.8333" height="153.333"/>
-  <object id="14" name="murs" type="murs" x="218" y="323.833" width="130.5" height="24.1667"/>
-  <object id="15" name="murs" type="murs" x="68" y="258.667" width="88.1667" height="26.8333"/>
-  <object id="16" name="murs" type="murs" x="6" y="98" width="22" height="246"/>
-  <object id="17" name="murs" type="murs" x="30" y="322.667" width="127.833" height="27.3333"/>
-  <object id="18" name="murs" type="murs" x="136" y="351.333" width="21.1667" height="60.6667"/>
+  <object id="9" name="murs" type="murs" x="644.227" y="132.667" width="87.7727" height="87.3333"/>
+  <object id="10" name="murs" type="murs" x="644" y="260.167" width="88.75" height="22.8333"/>
+  <object id="11" name="murs" type="murs" x="259.333" y="260.417" width="280.334" height="24.3106"/>
+  <object id="12" name="murs" type="murs" x="388.25" y="287" width="23.4545" height="60.75"/>
+  <object id="13" name="murs" type="murs" x="196.167" y="260.667" width="23.8333" height="152.583"/>
+  <object id="14" name="murs" type="murs" x="218" y="323.833" width="129.792" height="24.1667"/>
+  <object id="15" name="murs" type="murs" x="68" y="260.417" width="88.1667" height="24.0833"/>
+  <object id="16" name="murs" type="murs" x="6" y="94" width="22" height="250"/>
+  <object id="17" name="murs" type="murs" x="4.66667" y="324.334" width="151.916" height="25.6666"/>
+  <object id="18" name="murs" type="murs" x="136" y="351.333" width="19.4167" height="60.6667"/>
   <object id="19" name="murs" type="murs" x="2" y="388" width="130" height="24"/>
-  <object id="20" name="murs" type="murs" x="260" y="387" width="281" height="25"/>
+  <object id="20" name="murs" type="murs" x="260" y="388.25" width="279.5" height="23.75"/>
   <object id="21" name="murs" type="murs" x="260" y="410" width="22" height="66"/>
   <object id="22" name="murs" type="murs" x="280" y="450" width="257.5" height="26"/>
-  <object id="24" name="murs" type="murs" x="514.833" y="410.667" width="26.5" height="64"/>
-  <object id="25" name="murs" type="murs" x="195.5" y="451.5" width="25.5" height="89.5"/>
-  <object id="26" name="murs" type="murs" x="0" y="450" width="156.5" height="26"/>
+  <object id="24" name="murs" type="murs" x="514.833" y="410.667" width="25" height="64"/>
+  <object id="25" name="murs" type="murs" x="195.5" y="452.25" width="24.5" height="88.0833"/>
+  <object id="26" name="murs" type="murs" x="0" y="451.5" width="156.5" height="24.5"/>
   <object id="27" name="murs" type="murs" x="130" y="478" width="27.3333" height="63.3333"/>
   <object id="28" name="murs" type="murs" x="4" y="514" width="124" height="27"/>
   <object id="29" name="murs" type="murs" x="4" y="542" width="24" height="292"/>
-  <object id="30" name="murs" type="murs" x="28" y="642" width="66.6667" height="26"/>
-  <object id="31" name="murs" type="murs" x="72" y="584" width="80" height="18"/>
-  <object id="32" name="murs" type="murs" x="134" y="602" width="22" height="94"/>
-  <object id="33" name="murs" type="murs" x="66.6667" y="740" width="284" height="24"/>
-  <object id="34" name="murs" type="murs" x="195" y="581" width="23" height="157"/>
-  <object id="35" name="murs" type="murs" x="259.333" y="516" width="280.667" height="25.5"/>
-  <object id="36" name="murs" type="murs" x="387.333" y="542" width="26" height="124"/>
-  <object id="37" name="murs" type="murs" x="452" y="581.333" width="90" height="116.667"/>
-  <object id="38" name="murs" type="murs" x="578.167" y="452.167" width="26.5" height="89"/>
-  <object id="39" name="murs" type="murs" x="451.333" y="324" width="132.667" height="24.6667"/>
-  <object id="40" name="murs" type="murs" x="580" y="264" width="24" height="148.667"/>
+  <object id="30" name="murs" type="murs" x="28" y="643.455" width="63.9167" height="56.5455"/>
+  <object id="31" name="murs" type="murs" x="68.1818" y="580.75" width="87.3182" height="23"/>
+  <object id="32" name="murs" type="murs" x="132" y="602" width="24" height="97.7727"/>
+  <object id="33" name="murs" type="murs" x="67.9167" y="740" width="281.417" height="24.6667"/>
+  <object id="34" name="murs" type="murs" x="196.25" y="580" width="24.25" height="158"/>
+  <object id="35" name="murs" type="murs" x="259.333" y="516.5" width="280.167" height="23.75"/>
+  <object id="36" name="murs" type="murs" x="387.333" y="542" width="27.25" height="126.667"/>
+  <object id="37" name="murs" type="murs" x="453" y="581.333" width="86.25" height="121.417"/>
+  <object id="38" name="murs" type="murs" x="580.667" y="452.167" width="24" height="87"/>
+  <object id="39" name="murs" type="murs" x="452.666" y="324" width="131.334" height="23.6667"/>
+  <object id="40" name="murs" type="murs" x="580" y="260.667" width="23.6667" height="151.625"/>
   <object id="41" name="murs" type="murs" x="652" y="324.5" width="142" height="21.5"/>
   <object id="42" name="murs" type="murs" x="772.5" y="92" width="21.5" height="232"/>
   <object id="43" name="murs" type="murs" x="644.5" y="324.5" width="19.5" height="87"/>
   <object id="44" name="murs" type="murs" x="668" y="386" width="132.5" height="25.5"/>
-  <object id="45" name="murs" type="murs" x="641.333" y="452" width="156.667" height="22"/>
-  <object id="46" name="murs" type="murs" x="643.167" y="474" width="20.8333" height="66.5"/>
+  <object id="45" name="murs" type="murs" x="643.958" y="452.182" width="154.042" height="21.8182"/>
+  <object id="46" name="murs" type="murs" x="644.167" y="474" width="19.8333" height="66.5"/>
   <object id="47" name="murs" type="murs" x="647.333" y="518" width="144.667" height="21.6667"/>
-  <object id="48" name="murs" type="murs" x="771" y="541" width="13" height="281"/>
-  <object id="49" name="murs" type="murs" x="708" y="644.333" width="66" height="23.6667"/>
-  <object id="50" name="murs" type="murs" x="643" y="578.833" width="90.3333" height="26.3333"/>
+  <object id="48" name="murs" type="murs" x="772.25" y="548.636" width="12.2935" height="265.728"/>
+  <object id="49" name="murs" type="murs" x="708" y="644.333" width="66" height="53.6667"/>
+  <object id="50" name="murs" type="murs" x="644.5" y="578.833" width="87.3333" height="26.3333"/>
   <object id="51" name="murs" type="murs" x="644" y="602" width="24.5" height="99"/>
-  <object id="52" name="murs" type="murs" x="580.667" y="579.5" width="24.3333" height="182.5"/>
-  <object id="53" name="murs" type="murs" x="450" y="738.333" width="282.5" height="27"/>
-  <object id="54" name="murs" type="murs" x="387.5" y="707.5" width="24.5" height="116.5"/>
+  <object id="52" name="murs" type="murs" x="580.667" y="581.5" width="24.3333" height="180.5"/>
+  <object id="53" name="murs" type="murs" x="452.333" y="736.833" width="280.167" height="26.8333"/>
+  <object id="54" name="murs" type="murs" x="388.167" y="707.5" width="26.8333" height="116.5"/>
   <object id="55" name="murs" type="murs" x="-2" y="802" width="794" height="26"/>
-  <object id="56" name="murs" type="murs" x="772" y="668" width="22" height="140"/>
-  <object id="57" name="murs" type="murs" x="260.667" y="579.333" width="86.6667" height="116.667"/>
+  <object id="56" name="murs" type="murs" x="773.196" y="668.734" width="20.8043" height="132.391"/>
+  <object id="57" name="murs" type="murs" x="260.667" y="579.333" width="86.6667" height="120.667"/>
   <object id="65" name="murs" type="murs" x="388" y="88" width="25" height="132"/>
+  <object id="185" name="piece" type="piece" x="418.375" y="322.125">
+   <point/>
+  </object>
+  <object id="186" name="piece" type="piece" x="418" y="289.625">
+   <point/>
+  </object>
+  <object id="187" name="piece" type="piece" x="450.5" y="290.25">
+   <point/>
+  </object>
+  <object id="188" name="piece" type="piece" x="482.909" y="290">
+   <point/>
+  </object>
+  <object id="189" name="piece" type="piece" x="514.909" y="290">
+   <point/>
+  </object>
+  <object id="190" name="piece" type="piece" x="547.091" y="290">
+   <point/>
+  </object>
+  <object id="191" name="piece" type="piece" x="547.273" y="258.545">
+   <point/>
+  </object>
+  <object id="192" name="piece" type="piece" x="452.25" y="354.75">
+   <point/>
+  </object>
+  <object id="193" name="piece" type="piece" x="484" y="354.5">
+   <point/>
+  </object>
+  <object id="194" name="piece" type="piece" x="516.5" y="354">
+   <point/>
+  </object>
+  <object id="195" name="piece" type="piece" x="547.5" y="354.25">
+   <point/>
+  </object>
+  <object id="196" name="piece" type="piece" x="547.5" y="387.75">
+   <point/>
+  </object>
+  <object id="197" name="piece" type="piece" x="547.25" y="418.75">
+   <point/>
+  </object>
+  <object id="198" name="piece" type="piece" x="547" y="451.25">
+   <point/>
+  </object>
+  <object id="199" name="piece" type="piece" x="579.75" y="419">
+   <point/>
+  </object>
+  <object id="200" name="piece" type="piece" x="610.75" y="418.75">
+   <point/>
+  </object>
+  <object id="201" name="piece" type="piece" x="643.5" y="419.5">
+   <point/>
+  </object>
+  <object id="202" name="piece" type="piece" x="674.75" y="419.25">
+   <point/>
+  </object>
+  <object id="287" name="piece" type="piece" x="547.25" y="642.75">
+   <point/>
+  </object>
+  <object id="288" name="piece" type="piece" x="547.5" y="674.5">
+   <point/>
+  </object>
+  <object id="289" name="piece" type="piece" x="547.25" y="706.5">
+   <point/>
+  </object>
+  <object id="290" name="piece" type="piece" x="515.25" y="706.5">
+   <point/>
+  </object>
+  <object id="291" name="piece" type="piece" x="482.75" y="706.25">
+   <point/>
+  </object>
+  <object id="292" name="piece" type="piece" x="450.75" y="706.25">
+   <point/>
+  </object>
+  <object id="293" name="piece" type="piece" x="611.5" y="579.5">
+   <point/>
+  </object>
+  <object id="294" name="piece" type="piece" x="611" y="610.25">
+   <point/>
+  </object>
+  <object id="295" name="piece" type="piece" x="610.909" y="643.636">
+   <point/>
+  </object>
+  <object id="296" name="piece" type="piece" x="611.091" y="674.909">
+   <point/>
+  </object>
+  <object id="297" name="piece" type="piece" x="611.273" y="707.091">
+   <point/>
+  </object>
+  <object id="298" name="piece" type="piece" x="355.25" y="770.5">
+   <point/>
+  </object>
+  <object id="299" name="piece" type="piece" x="355.5" y="739">
+   <point/>
+  </object>
+  <object id="300" name="piece" type="piece" x="355.25" y="706.75">
+   <point/>
+  </object>
+  <object id="301" name="piece" type="piece" x="323.75" y="706.5">
+   <point/>
+  </object>
+  <object id="302" name="piece" type="piece" x="290.75" y="706">
+   <point/>
+  </object>
+  <object id="303" name="piece" type="piece" x="322.75" y="770.5">
+   <point/>
+  </object>
+  <object id="304" name="piece" type="piece" x="290.5" y="771">
+   <point/>
+  </object>
+  <object id="305" name="piece" type="piece" x="259.5" y="770">
+   <point/>
+  </object>
+  <object id="306" name="piece" type="piece" x="227.75" y="770.25">
+   <point/>
+  </object>
+  <object id="307" name="piece" type="piece" x="259" y="707">
+   <point/>
+  </object>
+  <object id="308" name="piece" type="piece" x="226.75" y="706.5">
+   <point/>
+  </object>
+  <object id="309" name="piece" type="piece" x="226.75" y="676.25">
+   <point/>
+  </object>
+  <object id="310" name="piece" type="piece" x="227" y="643">
+   <point/>
+  </object>
+  <object id="311" name="piece" type="piece" x="226.75" y="611">
+   <point/>
+  </object>
+  <object id="312" name="piece" type="piece" x="227" y="580">
+   <point/>
+  </object>
+  <object id="313" name="piece" type="piece" x="260.25" y="547.25">
+   <point/>
+  </object>
+  <object id="314" name="piece" type="piece" x="290.75" y="546.5">
+   <point/>
+  </object>
+  <object id="315" name="piece" type="piece" x="323.5" y="546">
+   <point/>
+  </object>
+  <object id="316" name="piece" type="piece" x="356.25" y="546.75">
+   <point/>
+  </object>
+  <object id="317" name="piece" type="piece" x="356" y="579.75">
+   <point/>
+  </object>
+  <object id="318" name="piece" type="piece" x="355.75" y="610.25">
+   <point/>
+  </object>
+  <object id="319" name="piece" type="piece" x="355.25" y="642.75">
+   <point/>
+  </object>
+  <object id="320" name="piece" type="piece" x="355" y="675.5">
+   <point/>
+  </object>
+  <object id="321" name="piece" type="piece" x="387.75" y="674.5">
+   <point/>
+  </object>
+  <object id="322" name="piece" type="piece" x="99.3333" y="547">
+   <point/>
+  </object>
+  <object id="323" name="piece" type="piece" x="68" y="547.333">
+   <point/>
+  </object>
+  <object id="324" name="piece" type="piece" x="35.3333" y="546">
+   <point/>
+  </object>
+  <object id="325" name="piece" type="piece" x="35.3333" y="579.667">
+   <point/>
+  </object>
+  <object id="326" name="piece" type="piece" x="36" y="611.333">
+   <point/>
+  </object>
+  <object id="327" name="piece" type="piece" x="68" y="610.667">
+   <point/>
+  </object>
+  <object id="328" name="piece" type="piece" x="99.3333" y="611.667">
+   <point/>
+  </object>
+  <object id="329" name="piece" type="piece" x="99.6667" y="644">
+   <point/>
+  </object>
+  <object id="330" name="piece" type="piece" x="100.333" y="675">
+   <point/>
+  </object>
+  <object id="333" name="piece" type="piece" x="35" y="706.75">
+   <point/>
+  </object>
+  <object id="334" name="piece" type="piece" x="35.25" y="739">
+   <point/>
+  </object>
+  <object id="335" name="piece" type="piece" x="35.5" y="770.75">
+   <point/>
+  </object>
+  <object id="336" name="piece" type="piece" x="68" y="770.5">
+   <point/>
+  </object>
+  <object id="337" name="piece" type="piece" x="99.75" y="770.25">
+   <point/>
+  </object>
+  <object id="338" name="piece" type="piece" x="132" y="770.75">
+   <point/>
+  </object>
+  <object id="339" name="piece" type="piece" x="164" y="769.75">
+   <point/>
+  </object>
+  <object id="340" name="piece" type="piece" x="196.5" y="769.75">
+   <point/>
+  </object>
+  <object id="341" name="piece" type="piece" x="164.25" y="707">
+   <point/>
+  </object>
+  <object id="342" name="piece" type="piece" x="164" y="675.5">
+   <point/>
+  </object>
+  <object id="343" name="piece" type="piece" x="163" y="642.75">
+   <point/>
+  </object>
+  <object id="344" name="piece" type="piece" x="162.5" y="611.25">
+   <point/>
+  </object>
+  <object id="345" name="piece" type="piece" x="163.25" y="578.75">
+   <point/>
+  </object>
+  <object id="346" name="piece" type="piece" x="67.25" y="707">
+   <point/>
+  </object>
+  <object id="347" name="piece" type="piece" x="100" y="706.5">
+   <point/>
+  </object>
+  <object id="348" name="piece" type="piece" x="131.5" y="706">
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="12" name="teleportation">
   <object id="92" name="teleportation_1" type="teleportation_1" x="800.667" y="416.667">
@@ -165,8 +911,8 @@
 40,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,40,
 40,0,34,35,26,0,39,0,25,35,26,0,40,0,25,35,26,0,39,0,25,35,36,0,40,
 40,0,0,0,40,0,40,0,40,0,40,0,40,0,40,0,40,0,40,0,40,0,0,0,40,
-5,35,36,0,40,0,40,0,40,0,40,0,41,0,40,0,40,0,40,0,40,0,34,35,7,
-40,0,0,0,41,0,40,0,28,35,27,0,0,0,28,35,27,0,40,0,41,0,0,0,40,
+28,35,26,0,40,0,40,0,40,0,40,0,41,0,40,0,40,0,40,0,40,0,25,35,27,
+25,35,27,0,41,0,40,0,28,35,27,0,0,0,28,35,27,0,40,0,41,0,28,35,26,
 40,0,0,0,0,0,40,0,0,0,0,0,39,0,0,0,0,0,40,0,0,0,0,0,40,
 40,0,34,35,35,35,8,35,35,35,36,0,40,0,34,35,35,35,8,35,35,35,36,0,40,
 40,0,0,0,0,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,40,

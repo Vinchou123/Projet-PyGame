@@ -20,6 +20,8 @@ pacman_images = {
     "right": pygame.image.load("assets/pacman.png"),
 }
 ghost_image = pygame.image.load("assets/ghost.png")
+piece_image = pygame.image.load("assets/pieces.png")
+
 current_direction = "right"
 pacman_image = pacman_images[current_direction]
 pacman_rect = pacman_image.get_rect()
@@ -94,6 +96,8 @@ def check_pacman_ghost_collision():
 def reset_pacman_position():
     pacman_rect.topleft = find_start_position()
 
+pacman_speed = 0.6
+
 def move_pacman(keys):
     global pacman_image, current_direction
 
@@ -101,16 +105,16 @@ def move_pacman(keys):
     new_y = pacman_rect.y
 
     if keys[pygame.K_LEFT]:
-        new_x -= 1
+        new_x -= pacman_speed
         current_direction = "left"
     if keys[pygame.K_RIGHT]:
-        new_x += 1
+        new_x += pacman_speed
         current_direction = "right"
     if keys[pygame.K_UP]:
-        new_y -= 1
+        new_y -= pacman_speed
         current_direction = "up"
     if keys[pygame.K_DOWN]:
-        new_y += 1
+        new_y += pacman_speed  
         current_direction = "down"
 
     pacman_image = pacman_images[current_direction]
@@ -118,7 +122,7 @@ def move_pacman(keys):
     if not check_collision(pygame.Rect(new_x, new_y, pacman_rect.width, pacman_rect.height)):
         pacman_rect.x = new_x
         pacman_rect.y = new_y
-    
+
     check_teleport_collision()
 
 just_teleported = False
@@ -173,7 +177,6 @@ def move_ghost(ghost, speed=ghost_speed):
         valid_directions = [d for d in DIRECTIONS.keys() if d != opposite[direction]]
         ghost["direction"] = random.choice(valid_directions)
 
-
 def move_all_ghosts():
     for ghost in ghosts:
         move_ghost(ghost)
@@ -186,9 +189,45 @@ def draw_map():
                 if image:
                     screen.blit(image, (x * tile_size, y * tile_size))
 
-def draw_lives():
+def draw_lives_and_score():
+    """Affiche le nombre de vies et le score à l'écran."""
     lives_text = font.render(f"Vie: {lives}", True, (255, 255, 255))
-    screen.blit(lives_text, (10, 10))
+    screen.blit(lives_text, (10, 15))
+    score_text = font.render(f"Score: {score}", True, (255, 255, 255))
+    screen.blit(score_text, (360, 15))
+    elapsed_time = (pygame.time.get_ticks() - start_time) // 1000
+    minutes = elapsed_time // 60
+    seconds = elapsed_time % 60
+    time_text = font.render(f"Temps: {minutes:02}:{seconds:02}", True, (255, 255, 255))
+    screen.blit(time_text, (670, 15))
+
+def find_piece_positions():
+    pieces = []
+    for obj in tmx_data.objects:
+        if obj.name == 'piece':
+            pieces.append((obj.x, obj.y))
+    return pieces
+
+piece_positions = find_piece_positions()
+
+def draw_pieces():
+    for pos in piece_positions:
+        screen.blit(piece_image, pos)
+
+score = 0
+start_time = pygame.time.get_ticks()
+
+def check_piece_collision():
+    """Vérifie les collisions entre Pac-Man et les pièces."""
+    global piece_positions, score
+    new_positions = []
+    for pos in piece_positions:
+        piece_rect = pygame.Rect(pos[0], pos[1], piece_image.get_width(), piece_image.get_height())
+        if pacman_rect.colliderect(piece_rect):
+            score += 1
+        else:
+            new_positions.append(pos)
+    piece_positions = new_positions
 
 running = True
 while running:
@@ -200,23 +239,19 @@ while running:
 
     move_pacman(keys)
     check_pacman_ghost_collision()
-
+    check_piece_collision()
     move_all_ghosts()
-
     screen.fill((0, 0, 0))
-
     draw_map()
-
+    draw_pieces()
     screen.blit(pacman_image, pacman_rect)
 
     for ghost in ghosts:
         if "image" not in ghost:
             ghost["image"] = ghost_image
-        
-    for ghost in ghosts:
         screen.blit(ghost["image"], ghost["rect"])
 
-    draw_lives()
+    draw_lives_and_score()
 
     pygame.display.flip()
 
