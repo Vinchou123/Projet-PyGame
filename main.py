@@ -21,6 +21,10 @@ pacman_images = {
 }
 ghost_image = pygame.image.load("assets/ghost.png")
 piece_image = pygame.image.load("assets/pieces.png")
+bop_sound = pygame.mixer.Sound("sounds/bop.wav")
+pacman_death_sound = pygame.mixer.Sound("sounds/pacman_death.wav")
+
+
 
 current_direction = "right"
 pacman_image = pacman_images[current_direction]
@@ -225,9 +229,21 @@ def check_piece_collision():
         piece_rect = pygame.Rect(pos[0], pos[1], piece_image.get_width(), piece_image.get_height())
         if pacman_rect.colliderect(piece_rect):
             score += 1
+            bop_sound.play()
         else:
             new_positions.append(pos)
     piece_positions = new_positions
+
+    
+
+def check_pacman_ghost_collision():
+    global lives
+    for ghost in ghosts:
+        if pacman_rect.colliderect(ghost["rect"]):
+            lives -= 1
+            reset_pacman_position()
+            pacman_death_sound.play()
+
 
 running = True
 while running:
@@ -252,6 +268,8 @@ while running:
         screen.blit(ghost["image"], ghost["rect"])
 
     draw_lives_and_score()
+    
+    pygame.mixer.init()
 
     pygame.display.flip()
 
