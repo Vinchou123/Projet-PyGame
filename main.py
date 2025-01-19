@@ -24,8 +24,6 @@ piece_image = pygame.image.load("assets/pieces.png")
 bop_sound = pygame.mixer.Sound("sounds/bop.wav")
 pacman_death_sound = pygame.mixer.Sound("sounds/pacman_death.wav")
 
-
-
 current_direction = "right"
 pacman_image = pacman_images[current_direction]
 pacman_rect = pacman_image.get_rect()
@@ -244,6 +242,10 @@ def check_pacman_ghost_collision():
             reset_pacman_position()
             pacman_death_sound.play()
 
+pygame.mixer.music.load("sounds/music_game.wav")
+pygame.mixer.music.play(loops=-1)
+pygame.mixer.music.set_volume(0.1)
+
 
 running = True
 while running:
@@ -270,7 +272,9 @@ while running:
     draw_lives_and_score()
     
     pygame.mixer.init()
-
     pygame.display.flip()
+    
+
+
 
 pygame.quit()
